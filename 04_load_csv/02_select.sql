@@ -1,10 +1,13 @@
+-- We set the size of the page we want to see to 100
 SET PAGESIZE 100
 DESC system.salaries_sf;
 
+-- We select *(all) from salaries_sf(what we named the list we loaded into SQL) from * we only fetch the first 20 rows
 SELECT *
 FROM salaries_sf
 FETCH FIRST 20 ROWS ONLY;
 
+-- We select all of count from the slararies list
 SELECT COUNT(*) FROM salaries_sf;
 
 
